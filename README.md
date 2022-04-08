@@ -21,4 +21,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* https://trello.com/invite/b/4sRUl1h7/590005366c14fff03d0530bc1292bc6e/proyecto
