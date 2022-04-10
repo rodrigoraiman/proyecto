@@ -4,12 +4,22 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+#   Character.create(name: "Luke", movie: movies.first
+
 
 
 30.times do
     Customer.create!({
         name: Faker::Name.name_with_middle
+    })
+
+end
+
+30.times do
+    Partner.create!({
+        name: Faker::Company.name,
+        address: Faker::Address.street_address,
+        city: Faker::Address.city
     })
 
 end

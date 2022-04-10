@@ -8,6 +8,7 @@ class PartnersController < ApplicationController
 
   # GET /partners/1 or /partners/1.json
   def show
+    render(partial: 'show') if request.xhr?
   end
 
   # GET /partners/new

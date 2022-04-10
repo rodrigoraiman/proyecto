@@ -15,7 +15,7 @@
   </p>
 
   <% if action_name != "show" %>
-    <%= link_to "Show this partner", partner, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Show this partner", partner, remote: true, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     <%= link_to 'Edit this partner', edit_partner_path(partner), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
   <% end %>
