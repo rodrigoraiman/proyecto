@@ -5,6 +5,14 @@
     <% end %>
 
     <%= render @customer %>
+    <p>
+      <h2>Especialidad</h2>
+      <ul>
+        <% @customer.partners.each do |partner| %>
+          <li><%= partner.name %></li>
+        <% end %>
+      </ul>
+  </p>
 
     <%= link_to 'Edit this customer', edit_customer_path(@customer), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     <div class="inline-block ml-2">
