@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "jquery-ujs": "^1.2.3",
     "react-on-rails": "^13.0.2"
   }
 }
