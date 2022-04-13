@@ -8,7 +8,7 @@ class CustomersController < ApplicationController
 
   # GET /customers/1 or /customers/1.json
   def show
-    render(partial: 'show') if request.xhr?
+    
   end
 
   # GET /customers/new

@@ -1,13 +1,15 @@
 <div class=container>
 
-
-  
-
-
 <% if current_user %>
     <p>Hello <%= current_user.email %>!</p>
+    <p>You are a [<%= current_user.role %>]
+    <% if current_user.admin? %>
+    <br/>
+        There are <%= User.count %> users in the system.
+    <% end %>
+
     <p> 
-      You have successfully
+      You have successfully.
       You are now ready
     </p>
     <%= link_to "Sign out", destroy_user_session_path, 'data-turbo-method': :delete %>
@@ -24,6 +26,5 @@
 </div>
 
 
-<h1>Homepages<h1>
 
-<%= form_with %>
+
