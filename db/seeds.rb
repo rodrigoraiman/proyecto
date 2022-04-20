@@ -7,27 +7,25 @@
 #   Character.create(name: "Luke", movie: movies.first
 
 
-    User.create(email: 'mano@example.com',
-                password: 'password',
-                password_confirmation: 'password',
-                role: User.roles[:admin])
-
-    User.create(email: 'robert@example.com',
-                password: 'password',
-                password_confirmation: 'password')
+    #User.create(email: 'mano@example.com',
+                #password: 'password',
+                #password_confirmation: 'password',
+                #role: User.roles[:admin])
+#User.create(email: 'robert@example.com',
+#                password: 'password',
+#                password_confirmation: 'password')
                 
         
 
     10.times do |x|
-        partner = Partner.create(name: "Name #{x}",
-                            customer: "Body #{x} Words go here Idk",
-                            user_id: User.first.id)
+        Partner.create(name: "Name #{x}",
+                            address: "Body #{x} Words go here Idk"                            )
 
-        5.times do |y|
-            Customer.create(customer: "Comment #{y}",
-                            user_id: User.second.id,
-                            post_id: post.id)
-        end
+       # 5.times do |y|
+        #    Customer.create(customer: "Comment #{y}",
+         #                   user_id: User.second.id,
+         #                  post_id: post.id)
+        #end
     end
 
 #30.times do

@@ -4,13 +4,13 @@
             User funtionality
           </a>
           <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelldby="navbarDropdown">
-            <li><%= link_to "Partners", new_partner_path, class: "dropdown-item" %>
-                <li><% link_to "Customers", new_customer_path,class: "dropdown-item" %></li>
+            <li><%= link_to "New partner", new_partner_path, class: "dropdown-item" %>
+                <li><%= link_to "New customer", new_customer_path, class: "dropdown-ite" %></li>
                 <li><a class="dropdown-item" href="#">Another action</a><li>
                 <li><hr class="dropdown-divider"></li>
                 
                 <li><%= button_to "Sign out", destroy_user_session_path, method: :delete, class:"dropdown-item" %><li>
-           </ul>
+            </ul>
           </li>
 <% else %>
     <li class="nav-item">
